@@ -16,17 +16,12 @@ function MyApp({ Component, pageProps }) {
       setLoading(true)
     }
 
-    // TODO: Remove timeout if necessary
     const handleRouteChangeComplete = (url) => {
-      setTimeout(() => {
-        setLoading(false)
-      }, 2000)
+      setLoading(false)
     }
 
     const handleRouteChangeError = (err, url) => {
-      setTimeout(() => {
-        setLoading(false)
-      }, 2000)
+      setLoading(false)
     }
 
     router.events.on('routeChangeStart', handleRouteChange)
