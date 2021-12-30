@@ -1,14 +1,16 @@
 import React from 'react' 
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import LogoDesktop from './logo_desktop.png'
-import Link from 'next/link'
 
 const Navbar = () => {
 
     const toggleDrawer = (event) => {
-        // TODO: Add drawer functionality
+        // Toggle class of drawer
+        document.querySelector('#drawer').classList.toggle('left-[-100%]')
+        document.querySelector('#drawer').classList.toggle('left-0')
     }
 
     return (
@@ -22,7 +24,7 @@ const Navbar = () => {
                         <button className='text-white' onClick={toggleDrawer}>Menu</button>
                     </div>
                 </div>
-                <div className='flex flex-col md:hidden justify-between h-screen w-80 text-white'>
+                <div id='drawer' className='flex flex-col md:hidden justify-between h-screen w-[50%] absolute top-0 left-[-100%] transition-all bg-black text-white'>
                     <div className='flex flex-col'>
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
