@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Useful documentation
 
 - [Next.js](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Tailwindcss](https://tailwindcss.com/docs/installation) - CSS framework used for this project.
+- [tailwindcss](https://tailwindcss.com/docs/installation) - CSS framework used for this project.
 
 ## Deploy on Vercel
 
