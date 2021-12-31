@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 import { Loader } from '../components/Loader'
+import { Navbar } from '../components/Navbar'
 
 import '../styles/globals.css'
 

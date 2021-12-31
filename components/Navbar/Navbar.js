@@ -3,34 +3,47 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import LogoDesktop from './logo_desktop.png'
+import LogoMobile from './logo_mobile.svg'
+import LogoDesktop from './logo_desktop.svg'
 
 const Navbar = () => {
 
+    // Toggles the classes controlling the left position of the navbar and the styles of the hamburger icon
     const toggleDrawer = (event) => {
-        // Toggle class of drawer
         document.querySelector('#drawer').classList.toggle('left-[-100%]')
         document.querySelector('#drawer').classList.toggle('left-0')
+        document.querySelector('#bar-1').classList.toggle('hidden')
+        document.querySelector('#bar-2').classList.toggle('active-2')
+        document.querySelector('#bar-3').classList.toggle('active-3')
     }
 
     return (
         <div>
-            <div className='bg-black'>
+            <div className='bg-black fixed z-10'>
                 {/* Mobile navbar */}
-                <div className='grid grid-cols-4 md:hidden'>
+                <div className='grid grid-cols-6 md:hidden h-[60px]'>
                     <div className='col-span-1'></div>
-                    <div className='col-span-2'></div>
+                    <div className='col-span-4 flex items-center px-[10px]'>
+                        <Link href="/" passHref={true}>
+                            <a>
+                                <Image src={LogoMobile} alt='Logo' />
+                            </a>
+                        </Link>
+                    </div>
                     <div className='col-span-1'>
-                        <button className='text-white' onClick={toggleDrawer}>Menu</button>
+                        <div onClick={toggleDrawer} className='h-full flex flex-col justify-center items-center space-y-[8px]'>
+                            <span id='bar-1' className='block h-[2px] w-[30px] border-zinc-500 border-l-[4px] border-r-[20px] rounded-full transition-all duration-300'></span>
+                            <span id='bar-2' className='block h-[2px] w-[30px] border-zinc-500 shadow-md border-l-[20px] border-r-[4px] rounded-full origin-bottom-right transition-all duration-300'></span>
+                            <span id='bar-3' className='block h-[2px] w-[30px] border-zinc-500 shadow-md border-l-[4px] border-r-[20px] rounded-full origin-bottom-left transition-all duration-300'></span>
+                        </div>
                     </div>
                 </div>
-                <div id='drawer' className='flex flex-col md:hidden justify-between h-screen w-[50%] absolute top-0 left-[-100%] transition-all bg-black text-white'>
-                    <div className='flex flex-col'>
-                        <Link href="/">Home</Link>
-                        <Link href="/about">About</Link>
-                        <Link href="/career">Career</Link>
-                        <Link href="/education">Education</Link>
-                        <Link href="/contact">Contact</Link>
+                <div id='drawer' className='flex flex-col md:hidden justify-between h-screen w-[50%] px-[36px] py-[32px] absolute top-0 left-[-100%] transition-all bg-black text-white border-r-[1px] border-zinc-600'>
+                    <div className='flex flex-col font-bold'>
+                        <Link href="/" passHref={true}><span className='mb-[20px]'>Home</span></Link>
+                        <Link href="/about" passHref={true}><span className='mb-[20px]'>About</span></Link>
+                        <Link href="/career" passHref={true}><span className='mb-[20px]'>Career</span></Link>
+                        <Link href="/contact" passHref={true}><span className='mb-[20px]'>Contact</span></Link>
                     </div>
                     <div className='flex flex-row'>
                         <a href="https://www.linkedin.com/in/spencer-miller23/"  target="_blank" rel='noreferrer' className='w-[40px] mr-[10px] fill-zinc-500 hover:fill-white transition-colors'>
@@ -62,9 +75,11 @@ const Navbar = () => {
                             </svg>
                         </a>
                     </div>
-                    <div className='col-span-1'>
+                    <div className='col-span-1 py-[25px]'>
                         <Link href='/' passHref={true}>
-                            <Image src={LogoDesktop} alt='Logo' />
+                            <a>
+                                <Image src={LogoDesktop} alt='Logo' />
+                            </a>
                         </Link>
                     </div>
                 </div>
@@ -74,9 +89,6 @@ const Navbar = () => {
                     </div>
                     <div className='text-zinc-500 hover:text-white transition-colors font-bold border-r-[1px] border-zinc-600 px-[25px] py-[7px]'>
                         <Link href="/career">Career</Link>
-                    </div>
-                    <div className='text-zinc-500 hover:text-white transition-colors font-bold border-r-[1px] border-zinc-600 px-[25px] py-[7px]'>
-                        <Link href="/education">Education</Link>
                     </div>
                     <div className='text-zinc-500 hover:text-white transition-colors font-bold border-r-[1px] border-zinc-600 px-[25px] py-[7px]'>
                         <Link href="/contact">Contact</Link>

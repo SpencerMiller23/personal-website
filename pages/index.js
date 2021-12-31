@@ -16,18 +16,20 @@ export default function Home() {
 
       <Navbar />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div className='pt-[60px] md:pt-[210px]'>
+        <footer className={styles.footer}>
+          <a
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by{' '}
+            <span className={styles.logo}>
+              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            </span>
+          </a>
+        </footer>
+      </div>
     </div>
   )
 }

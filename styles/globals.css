@@ -18,3 +18,69 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .active-2 {
+    @apply
+      rotate-45
+      -translate-x-2
+      translate-y-[530%]
+      w-[34px]
+      border-l-[25px]
+      border-r-[5px]
+      !border-white
+      !shadow-[#d50032];
+  }
+  .active-3 {
+    @apply
+      -rotate-45
+      translate-x-1
+      w-[34px]
+      border-l-[5px]
+      border-r-[25px]
+      !border-white
+      !shadow-[#106ae0];
+  }
+}
+
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(200px) rotateX(40deg);
+  transform-origin: 50% 100%;
+  margin: auto;
+  width: 90vw;
+  max-width: 600px;
+  font-size: 200%;
+  text-align: justify;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#content {
+  animation: scroll 100s linear;
+}
+
+@keyframes scroll {
+  0% {
+      margin-top: 220%;
+  }
+  100% {
+      margin-top: -470%;
+  }
+}
+
+@media (min-width: 768px) {
+  #board {
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+  }
+
+  @keyframes scroll {
+    0% {
+        margin-top: 120%;
+    }
+    100% {
+        margin-top: -570%;
+    }
+  }
+}
