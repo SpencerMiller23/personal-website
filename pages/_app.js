@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 import { Loader } from '../components/Loader'
-import { Navbar } from '../components/Navbar'
+import Layout from '../components/layout'
 
 import '../styles/globals.css'
 
@@ -39,7 +39,9 @@ function MyApp({ Component, pageProps }) {
       {loading ? (
         <Loader />
       ) : (
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       )}
     </>
   )

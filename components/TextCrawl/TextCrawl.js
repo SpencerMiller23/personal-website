@@ -27,7 +27,7 @@ const TextCrawl = () => {
 
     return (
         <div>
-            <div className='bg-black h-screen w-screen pt-[60px] md:pt-[210px] flex flex-col overflow-hidden'>
+            <div className='content-container w-screen h-screen flex flex-col md:pt-[210px] overflow-hidden'>
                 {/* 
                     Starwars-style opening text crawl
                     Useful link: https://dev.to/christopherkade/developing-the-star-wars-opening-crawl-in-htmlcss-2j9e

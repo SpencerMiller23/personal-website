@@ -4,9 +4,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'scroll': ['"Century Gothic"', 'CenturyGothic', 'AppleGothic', '"sans-serif"'],
-    },
     extend: {
       keyframes: {
         spin: {

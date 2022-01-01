@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='bg-black fixed z-10'>
+            <div className='w-screen bg-black fixed z-10'>
                 {/* Mobile navbar */}
                 <div className='grid grid-cols-6 md:hidden h-[60px]'>
                     <div className='col-span-1'></div>
@@ -75,7 +75,7 @@ const Navbar = () => {
                             </svg>
                         </a>
                     </div>
-                    <div className='col-span-1 py-[25px]'>
+                    <div className='col-span-1 flex justify-center py-[25px]'>
                         <Link href='/' passHref={true}>
                             <a>
                                 <Image src={LogoDesktop} alt='Logo' />

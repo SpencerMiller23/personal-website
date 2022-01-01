@@ -1,12 +1,9 @@
 import React from 'react'
 
-import { Navbar } from '../components/Navbar'
-
 const career = () => {
     return (
         <div>
-            <Navbar />
-            <div className='bg-black w-screen h-screen pt-[60px] md:pt-[210px] overflow-y-scroll'>
+            <div className='content-container w-screen h-screen flex flex-col py-[60px] md:pt-[210px] overflow-y-scroll'>
                 <div className='bg-zinc-800 w-[800px] max-w-[90vw] mb-[60px] flex flex-row text-white rounded-xl m-auto'>
                     <div className='p-[40px]'>
                         <h3><a href='https://www.ilta.co.il/' target="_blank" rel='noreferrer' className='underline'>Israeli Legal Tech Accelerator</a>, November 2020 - February 2021</h3>

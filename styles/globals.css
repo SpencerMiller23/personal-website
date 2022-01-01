@@ -13,11 +13,21 @@ a {
 
 * {
   box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1, h2, h3 {
+  font-family: 'starwars', sans-serif;
+}
 
 @layer components {
   .active-2 {
@@ -41,6 +51,15 @@ a {
       !border-white;
     box-shadow: 4px 0 6px 1px #106ae0;
   }
+}
+
+.content-container {
+  background-size: cover;
+  background-image: url(../public/background_mobile.jpeg);
+}
+
+.hero {
+  height: calc(100vh - 60px);
 }
 
 #board {
@@ -70,6 +89,14 @@ a {
 }
 
 @media (min-width: 768px) {
+  .content-container {
+    background-image: url(../public/background_desktop.jpeg);
+  }
+
+  .hero {
+    height: calc(100vh - 210px);
+  }
+
   #board {
     transform: perspective(300px) rotateX(25deg);
     transform-origin: 50% 100%;
