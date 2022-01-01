@@ -2,13 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Setup
 
-### 1) Install dependencies
+### 1) Install dependencies and start dev server
 
-run `npm install`
-
-### 2) Start dev server
-
-run `npm run dev`
+run `npm run setup`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
