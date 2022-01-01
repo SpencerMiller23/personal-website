@@ -33,8 +33,8 @@ const Navbar = () => {
                     <div className='col-span-1'>
                         <div onClick={toggleDrawer} className='h-full flex flex-col justify-center items-center space-y-[8px]'>
                             <span id='bar-1' className='block h-[2px] w-[30px] border-zinc-500 border-l-[4px] border-r-[20px] rounded-full transition-all duration-300'></span>
-                            <span id='bar-2' className='block h-[2px] w-[30px] border-zinc-500 shadow-md border-l-[20px] border-r-[4px] rounded-full origin-bottom-right transition-all duration-300'></span>
-                            <span id='bar-3' className='block h-[2px] w-[30px] border-zinc-500 shadow-md border-l-[4px] border-r-[20px] rounded-full origin-bottom-left transition-all duration-300'></span>
+                            <span id='bar-2' className='block h-[2px] w-[30px] border-zinc-500 border-l-[20px] border-r-[4px] rounded-full origin-bottom-right transition-all duration-300'></span>
+                            <span id='bar-3' className='block h-[2px] w-[30px] border-zinc-500 border-l-[4px] border-r-[20px] rounded-full origin-bottom-left transition-all duration-300'></span>
                         </div>
                     </div>
                 </div>

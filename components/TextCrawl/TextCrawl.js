@@ -16,8 +16,9 @@ const TextCrawl = () => {
         const timer2 = setTimeout(() => {
             document.getElementById('logo').classList.toggle('hidden')
             document.getElementById('board').classList.toggle('hidden')
-        }, 20000)
+        }, 21000)
 
+        // Remove the timers when the component is unmounted
         return () => {
             clearTimeout(timer1)
             clearTimeout(timer2)
@@ -31,9 +32,9 @@ const TextCrawl = () => {
                     Starwars-style opening text crawl
                     Useful link: https://dev.to/christopherkade/developing-the-star-wars-opening-crawl-in-htmlcss-2j9e
                 */}
-                <section id='intro' className="m-auto text-[#4bd5ee] opacity-0 font-normal md:text-[200%] animate-[intro_6s_ease-out]">A long time ago, in a galaxy far,<br />far away.... (Canada)<br /><br />(Click for sound)</section>
+                <section id='intro' className="m-auto text-[#4bd5ee] opacity-0 font-normal md:text-[200%] animate-[intro_6s_ease-out_1s]">A long time ago, in a galaxy far,<br />far away.... (Canada)<br /><br />(Click anywhere for sound)</section>
                 
-                <section id='logo' className="hidden m-auto opacity-0 animate-[logo_9s_ease-out_7s]">
+                <section id='logo' className="hidden m-auto opacity-0 animate-[logo_9s_ease-out_5s]">
                     <Image src={Logo} alt='Logo' />
                 </section>
 

@@ -14,8 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Useful documentation
 
-- [Next.js](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js](https://nextjs.org/docs) - Learn about Next.js features and API.
 - [tailwindcss](https://tailwindcss.com/docs/installation) - CSS framework used for this project.
+- [EmailJS](https://www.emailjs.com/docs/sdk/installation/) - API used for sending emails from the frontend app
 
 ## Deploy on Vercel
 

@@ -25,21 +25,21 @@ a {
       rotate-45
       -translate-x-2
       translate-y-[530%]
-      w-[34px]
-      border-l-[25px]
-      border-r-[5px]
-      !border-white
-      !shadow-[#d50032];
+      !w-[34px]
+      !border-l-[25px]
+      !border-r-[5px]
+      !border-white;
+    box-shadow: -5px 0px 6px 1px #d50032;
   }
   .active-3 {
     @apply
       -rotate-45
       translate-x-1
-      w-[34px]
-      border-l-[5px]
-      border-r-[25px]
-      !border-white
-      !shadow-[#106ae0];
+      !w-[34px]
+      !border-l-[5px]
+      !border-r-[25px]
+      !border-white;
+    box-shadow: 4px 0 6px 1px #106ae0;
   }
 }
 
