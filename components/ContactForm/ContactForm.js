@@ -11,13 +11,15 @@ const ContactForm = () => {
     // Simple email validation that checks for any empty fields and whether the email is valid
     const validateForm = () => {
         const inputs = formRef.current.querySelectorAll('input');
-        var validRegex = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/";
-        if (inputs[0].value.length < 2 || inputs[1].value.length < 2 || inputs[2].value.length < 2) {
+        const textarea = formRef.current.querySelector('textarea');
+        const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (inputs[0].value.length < 2 || inputs[1].value.length < 2 || textarea.value.length < 2) {
             setError('Please fill in all fields')
             return false
         }
-        if (!inputs[0].value.match(validRegex)) {
+        if (!inputs[2].value.match(validRegex)) {
             setError('Please enter a valid email address')
+            console.log(inputs[2].value)
             return false
         }
         return true
