@@ -45,7 +45,7 @@ const Navbar = () => {
                         <Link href="/career" passHref={true}><span className='mb-[20px]'>Career</span></Link>
                         <Link href="/contact" passHref={true}><span className='mb-[20px]'>Contact</span></Link>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col pb-[60px]'>
                         <div className='mb-[20px] mx-auto'>
                             <a className='text-black text-sm font-bold my-auto bg-[#FBE752] px-[15px] py-[10px] rounded-xl' href='/Miller_CV.pdf' download>Download CV</a>
                         </div>
