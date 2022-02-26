@@ -46,8 +46,8 @@ const Navbar = () => {
                         <Link href="/contact" passHref={true}><span className='mb-[20px]'>Contact</span></Link>
                     </div>
                     <div className='flex flex-col'>
-                        <div className='mb-[20px]'>
-                            <a className='text-black text-sm font-bold my-auto bg-[#FBE752] px-[15px] py-[7px] rounded-xl' href='/Miller_CV.pdf' download>Download CV</a>
+                        <div className='mb-[20px] mx-auto'>
+                            <a className='text-black text-sm font-bold my-auto bg-[#FBE752] px-[15px] py-[10px] rounded-xl' href='/Miller_CV.pdf' download>Download CV</a>
                         </div>
                         <div className='flex flex-row'>
                             <a href="https://www.linkedin.com/in/spencer-miller23/"  target="_blank" rel='noreferrer' className='w-[40px] mr-[10px] fill-zinc-500 hover:fill-white transition-colors'>
@@ -100,7 +100,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className='col-span-2 flex justify-end'>
-                        <a className='text-white font-bold my-auto mr-[20px] border-[#FBE752] border-[2px] hover:bg-[#FBE752] hover:text-black transition-colors px-[25px] py-[7px] rounded-xl' href='/Miller_CV.pdf' download>Download CV</a>
+                        <a className='text-white font-bold my-auto mr-[20px] border-[#FBE752] border-[3px] hover:bg-[#FBE752] hover:text-black transition-colors px-[25px] py-[7px] rounded-xl' href='/Miller_CV.pdf' download>Download CV</a>
                     </div>
                 </div>
                 <div className='hidden md:flex flex-row justify-center border-y-[1px] border-zinc-600'>

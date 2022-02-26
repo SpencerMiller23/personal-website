@@ -50,31 +50,31 @@ const ContactForm = () => {
                 <div className='col-span-2 md:col-span-1 md:pr-[10px] mb-[10px]'>
                     <label htmlFor='fname'>First name</label>
                     <br />
-                    <input type="text" name="fname" className='fName w-full bg-transparent px-[20px] py-[10px] border-[#FFE81F] border-[3px] my-[10px] focus:outline-none' placeholder='Leia' />
+                    <input type="text" name="fname" className='fName w-full bg-transparent px-[20px] py-[10px] border-[#FBE752] border-[3px] my-[10px] focus:outline-none' placeholder='Leia' />
                 </div>
                 <div className='col-span-2 md:col-span-1 md:pl-[10px] mb-[10px]'>
                     <label htmlFor='lname'>Last name</label>
                     <br />
-                    <input type="text" name="lname" className='lName w-full bg-transparent px-[20px] py-[10px] border-[#FFE81F] border-[3px] my-[10px] focus:outline-none' placeholder='Organa' />
+                    <input type="text" name="lname" className='lName w-full bg-transparent px-[20px] py-[10px] border-[#FBE752] border-[3px] my-[10px] focus:outline-none' placeholder='Organa' />
                 </div>
                 <div className='col-span-2 mb-[10px]'>
                     <label htmlFor='email'>Email</label>
                     <br />
-                    <input type="email" name="email" className='email w-full bg-transparent px-[20px] py-[10px] border-[#FFE81F] border-[3px] my-[10px] focus:outline-none' placeholder='leia.organa@galacticsenate.gov' />
+                    <input type="email" name="email" className='email w-full bg-transparent px-[20px] py-[10px] border-[#FBE752] border-[3px] my-[10px] focus:outline-none' placeholder='leia.organa@galacticsenate.gov' />
                 </div>
                 <div className='col-span-2 mb-[10px]'>
                     <label htmlFor='message'>Message</label>
                     <br />
                     <textarea
                         name='message'
-                        className='message w-full h-[440px] md:h-[200px] bg-transparent px-[20px] py-[10px] border-[#FFE81F] border-[3px] my-[10px] focus:outline-none'
+                        className='message w-full h-[440px] md:h-[200px] bg-transparent px-[20px] py-[10px] border-[#FBE752] border-[3px] my-[10px] focus:outline-none'
                         rows='10'
                         placeholder="General Miller. Years ago you served my father in the Clone Wars. Now he begs you to help him in his struggle against the Empire. I regret that I am unable to present my father's request to you in person, but my ship has fallen under attack, and I'm afraid my mission to bring you to Alderaan has failed. I have placed information vital to the survival of the Rebellion into the memory systems of this R2 unit. My father will know how to retrieve it. You must see this droid safely delivered to him on Alderaan. This is our most desperate hour. Help me, Spencer Miller. You're my only hope."
                     >
                     </textarea>
                 </div>
                 <div className='col-span-2'>
-                    <button className='submit w-full bg-transparent px-[20px] py-[10px] border-[#FFE81F] border-[3px]'>Send</button>
+                    <button className='submit w-full bg-transparent hover:bg-[#FBE752] hover:text-black transition-colors font-bold px-[20px] py-[10px] border-[#FBE752] border-[3px]'>Send</button>
                 </div>
             </form>
             <p className='p-[20px] h-[64px] text-white text-center'>{error}</p>

@@ -15,7 +15,7 @@ function contact() {
                         <Image src={Yoda} alt='Yoda' />
                     </div>
                     <div className='text-white text-2xl md:text-4xl font-bold pl-[20px] md:pl-[50px]'>
-                        <h2>Full-stack engineer,<br />if you seek,<br /> contact me,<br />you must</h2>
+                        <h2>Full-stack engineer,<br />if you seek,<br /> contact Spencer,<br />you must</h2>
                     </div>
                 </div>
                 <p className='text-white text-lg md:text-xl text-center p-[20px]'>Please feel free to get in touch with any relevant job opportunities.<br />I would be happy to hear from you.</p>
