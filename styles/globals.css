@@ -62,6 +62,18 @@ h1, h2, h3 {
   height: calc(100vh - 60px);
 }
 
+.technology-container {
+  max-width: 90vw;
+}
+
+.technology-container > div {
+  margin: auto;
+}
+
+.technology-container img {
+  max-height: 50px;
+}
+
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   transform: perspective(200px) rotateX(40deg);
