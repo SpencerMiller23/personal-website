@@ -15,7 +15,7 @@ import graphql from '../Common/graphql.png'
 
 const Technologies = () => {
     return (
-        <div className='bg-zinc-500 p-[30px] md:p-[40px] mb-[40px] md:mt-[80px]'>
+        <div className='bg-zinc-500 p-[30px] md:p-[40px] mb-[50px] md:mt-[80px]'>
             <h1 className='text-center text-2xl md:text-3xl font-bold pb-[30px]'>Technologies that interest me</h1>
             <div className='technology-container max-w-[90vw] container mx-auto grid grid-cols-4 lg:grid-cols-12 gap-5 lg:gap-0'>
                 <div className='col-span-1 m-auto'>
