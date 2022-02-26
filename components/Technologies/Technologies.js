@@ -17,35 +17,35 @@ const Technologies = () => {
     return (
         <div className='bg-zinc-500 p-[30px] md:p-[40px] mb-[40px] md:mt-[80px]'>
             <h1 className='text-center text-2xl md:text-3xl font-bold pb-[30px]'>Technologies that interest me</h1>
-            <div className='technology-container container mx-auto grid grid-cols-4 lg:grid-cols-12 gap-5 lg:gap-0'>
-                <div className='col-span-1'>
+            <div className='technology-container max-w-[90vw] container mx-auto grid grid-cols-4 lg:grid-cols-12 gap-5 lg:gap-0'>
+                <div className='col-span-1 m-auto'>
                     <Image src={typescript} alt='TypeScript' />
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-1 m-auto'>
                     <Image src={react} alt='React' />                    
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-1 m-auto'>
                     <Image src={nextjs} alt='Next.js' />
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-1 m-auto'>
                     <Image src={solidity} alt='Solidity' />
                 </div>
-                <div className='col-span-1 px-[10px]'>
+                <div className='col-span-1 px-[10px] m-auto'>
                     <Image src={hardhat} alt='Hardhat' />
                 </div>
-                <div className='col-span-1 px-[10px]'>
+                <div className='col-span-1 px-[10px] m-auto'>
                     <Image src={nodejs} alt='Node.js' />
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-1 m-auto'>
                     <Image src={graphql} alt='GraphQL' />
                 </div>
-                <div className='col-span-1 px-[10px]'>
+                <div className='col-span-1 px-[10px] m-auto'>
                     <Image src={aws} alt='AWS' />
                 </div>
-                <div className='col-span-2 px-[10px]'>
+                <div className='col-span-2 px-[10px] m-auto'>
                     <Image src={terraform} alt='Terraform' />
                 </div>
-                <div className='col-span-2 px-[10px]'>
+                <div className='col-span-2 px-[10px] m-auto'>
                     <Image src={docker} alt='Docker' />
                 </div>
             </div>

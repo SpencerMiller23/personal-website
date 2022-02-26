@@ -62,14 +62,6 @@ h1, h2, h3 {
   height: calc(100vh - 60px);
 }
 
-.technology-container {
-  max-width: 90vw;
-}
-
-.technology-container > div {
-  margin: auto;
-}
-
 .technology-container img {
   max-height: 50px;
 }
