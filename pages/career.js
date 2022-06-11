@@ -22,7 +22,15 @@ const career = () => {
                         </a>
                         <div>
                             <h3><a href='https://don-key.finance/' target="_blank" rel='noreferrer' className='underline'>Don-key Finance</a>, February 2022 - Present</h3>
-                            <h2 className='text-xl font-bold'>Full-stack Development Jedi</h2>
+                            <h2 className='text-xl font-bold'>Web3 Development Jedi</h2>
+                            <ul className='list-disc pl-[20px]'>
+                                <li>
+                                    Developing a scalable blockchain indexing tool that will replace a third-party alternative, leading to a reduction in cost and improvement in performance.
+                                </li>
+                                <li>
+                                    Implementing a GraphQL API that will serve indexed data to the client. 
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
