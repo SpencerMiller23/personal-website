@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import { Hero } from '../components/Hero'
 import { Technologies } from '../components/Technologies'
-import { Education } from '../components/Education'
+import { Section } from '../components/Section'
 import { FeaturedProjects } from '../components/FeaturedProjects'
+import { OpenSource } from '../components/OpenSource'
 import { Role } from '../components/Role'
 import roleData from '../components/Role/roleData'
-import { Section } from '../components/Section'
+import { Education } from '../components/Education'
 
 import styles from '../styles/Home.module.css'
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <Technologies />
         <Section header='Projects' childComponent={<FeaturedProjects />} />
+        <Section header='Open Source Contributions' childComponent={<OpenSource />} />
         <Section header='Current Role' childComponent={<Role roleData={roleData[0]} />} />
         <Section header='Education' childComponent={<Education />} />
       </div>

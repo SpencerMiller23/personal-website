@@ -4,7 +4,7 @@ import MultiSig from './multi-sig.jpg'
 
 const FeaturedProjects = () => {
     return (
-        <div className='grid grid-cols-3'>
+        <div className='grid md:grid-cols-3'>
             <a href='https://ethereum-multi-sig-wallet.vercel.app/' target="_blank" rel="noreferrer">
                 <div className='col-span-3 md:col-span-1 opacity-75 hover:opacity-100 transition-all duration-300'>
                     <Image src={MultiSig} alt='MultiSig' />
