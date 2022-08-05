@@ -23,7 +23,6 @@ export default function Home() {
         <Hero />
         <Technologies />
         <Section header='Projects' childComponent={<FeaturedProjects />} />
-        <Section header='Open Source Contributions' childComponent={<OpenSource />} />
         <Section header='Current Role' childComponent={<Role roleData={roleData[0]} />} />
         <Section header='Education' childComponent={<Education />} />
       </div>
