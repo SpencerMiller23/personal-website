@@ -22,8 +22,9 @@ export default function Home() {
       <div className='content-container w-screen h-screen flex flex-col py-[60px] md:pt-[210px] overflow-y-scroll'>
         <Hero />
         <Technologies />
-        <Section header='Projects' childComponent={<FeaturedProjects />} />
         <Section header='Current Role' childComponent={<Role roleData={roleData[0]} />} />
+        <Section header='Projects' childComponent={<FeaturedProjects />} />
+        <Section header='Open-Source Contributions' childComponent={<OpenSource />} />
         <Section header='Education' childComponent={<Education />} />
       </div>
     </div>

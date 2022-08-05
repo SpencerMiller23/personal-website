@@ -15,8 +15,9 @@ const donkeyRoleData = {
   'date': 'February 2022 - Present',
   'position': 'Web3 Development Jedi',
   'objectiveArr': [
-    'Developing a scalable blockchain indexing tool that will replace a third-party alternative, leading to a reduction in cost and improvement in performance.',
-    'Implementing a GraphQL API that will serve indexed data to the client.'
+    'Overseeing the architecting and development of a secure, cross-chain messaging system to synchronize data between smart contracts deployed on different blockchains.',
+    'Conducting security audits for smart contracts to ensure contracts are free of security vulnerabilities while also eliminating bugs',
+    'Developed a scalable blockchain indexing tool that will replace a third-party alternative, leading to a reduction in cost and improvement in performance.'
   ]
 }
 
