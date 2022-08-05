@@ -3,7 +3,9 @@ import { Hero } from '../components/Hero'
 import { Technologies } from '../components/Technologies'
 import { Education } from '../components/Education'
 import { FeaturedProjects } from '../components/FeaturedProjects'
-import { CurrentRole } from '../components/CurrentRole'
+import { Role } from '../components/Role'
+import roleData from '../components/Role/roleData'
+import { Section } from '../components/Section'
 
 import styles from '../styles/Home.module.css'
 
@@ -19,9 +21,9 @@ export default function Home() {
       <div className='content-container w-screen h-screen flex flex-col py-[60px] md:pt-[210px] overflow-y-scroll'>
         <Hero />
         <Technologies />
-        <FeaturedProjects />
-        <CurrentRole />
-        <Education />
+        <Section header='Projects' childComponent={<FeaturedProjects />} />
+        <Section header='Current Role' childComponent={<Role roleData={roleData[0]} />} />
+        <Section header='Education' childComponent={<Education />} />
       </div>
     </div>
   )
